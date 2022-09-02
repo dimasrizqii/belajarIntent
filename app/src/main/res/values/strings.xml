@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="namaLengkap">Nama Lengkap</string>
+    <string name="namaPanggilan">Nama Panggilan</string>
+    <string name="umur">Umur</string>
+    <string name="alamat">Alamat</string>
+    <string name="isi_intent">Nama Lengkap : %1$s\nNama Panggilan : %2s\nUmur : %3$s Tahun\nAlamat : %4$s</string>
+    <string name="contoh_tulisan">Dimas Rizqi Ibadurrahim\nDimas\n20 tahun\nPondok Sedati Asri N.16 Sidoarjo</string>
+</resources>
