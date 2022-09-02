@@ -8,6 +8,7 @@ class Action1 : AppCompatActivity() {
     private lateinit var binding: ActivityAction1Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityAction1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         intent()

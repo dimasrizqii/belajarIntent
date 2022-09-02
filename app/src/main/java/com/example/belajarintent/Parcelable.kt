@@ -8,6 +8,7 @@ class Parcelable : AppCompatActivity() {
     private lateinit var binding: ActivityParcelableBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityParcelableBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         parcelable()

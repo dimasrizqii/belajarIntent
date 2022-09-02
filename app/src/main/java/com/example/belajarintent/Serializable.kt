@@ -5,9 +5,11 @@ import android.os.Bundle
 import com.example.belajarintent.databinding.ActivitySerializableBinding
 
 class Serializable : AppCompatActivity() {
-    private lateinit var binding: ActivitySerializableBinding
+    private lateinit var binding : ActivitySerializableBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivitySerializableBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         serializable()

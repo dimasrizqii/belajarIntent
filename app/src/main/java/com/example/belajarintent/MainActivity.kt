@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnSatuPerSatu.setOnClickListener{ action1() }
@@ -86,9 +87,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val USER_SERIALIZABLE = "user_serializable"
-        const val USER_PARCELABLE = "user_parcelable"
-
         const val INTENT_FULL_NAME = "intent_full_name"
         const val INTENT_NICKNAME = "intent_nickname"
         const val INTENT_AGE = "intent_age"
@@ -98,5 +96,8 @@ class MainActivity : AppCompatActivity() {
         const val BUNDLE_NICKNAME = "bundle_nickname"
         const val BUNDLE_AGE = "bundle_age"
         const val BUNDLE_ADDRESS = "bundle_address"
+
+        const val USER_SERIALIZABLE = "user_serializable"
+        const val USER_PARCELABLE = "user_parcelable"
     }
 }
